@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BASIC HTML TUTORIAL EXAMPLE</title>
+        <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: Arial, Franklin Gothic, Medium;
+            position: relative;
+            background-image: url('Layer 3 copy.png'), url('eye-black.gif');
+            background-repeat: no-repeat, repeat;
+            background-position: right, bottom;
+            background-size: auto;
+            z-index: 5;  
+        }
+
+        
+        
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        a:hover {
+            color: greenyellow;
+        }
+        a:visited {
+            color: rgb(255, 64, 128);
+        }
+
+        @keyframes rgbCycle {
+            0% {
+                color: rgb(255, 0, 0); 
+            }
+            25% {
+                color: rgb(0, 255, 0); 
+            }
+            50% {
+                color: rgb(0, 0, 255); 
+            }
+            75% {
+                color: rgb(255, 255, 0); 
+            }
+            100% {
+                color: rgb(255, 0, 255); 
+            }
+        }
+
+        H3 {
+            animation: rgbCycle 5s infinite;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('Layer 1.png');
+            background-repeat: repeat;
+            background-position: top left;
+            background-size: auto;
+            opacity: 0.3;
+            z-index: 1;
+
+        }
+
+
+        .bottom-border {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px; 
+            background-image: url('fire.gif');
+            background-repeat: repeat-x; 
+            background-position: bottom;
+            z-index: 1000;
+        }
+        .top-spacer {
+            height: 100px;
+        }
+        .bottom-spacer {
+            height: 100px;
+        }
+
+        .content {
+            padding-bottom: 100px;
+            position: relative;
+            z-index: 10;
+        }
+    </style>
+    </head>
+    <body>
+        <img src="fire.gif" alt="Top GIF" style="width: 100%; height: 100px; z-index: 1000; position: relative;" />
+
+        <div class="top-spacer"></div>
+
+        
+
+        <div class="content"
+        <!--Main Heaing-->
+        <h1>Welcome to my Website</h1>
+        <H2 style="text-align: center;">They are in my walls!</H2>
+        <!--This is a paragraph-->
+        <p>
+            Hello!  <br>my name is Anthony Barrera</br>
+        </p>
+        <!--Showing a Link-->
+        <p>Do not Click <a href="https://floatingqrcode.com/"target="_blank"> this link!</a></p>
+        <!--Display image-->
+        <h3>Heres a cool picture I found on my phone</h3>
+        <img src="stable.jpg"alt="meme" width="500" height="500">
+
+        <!---Show a Ordered List-->
+        
+        <h2>My Top 5 non-cringe books</h2>
+        <ol>
+            <li>The Three Body Problem, Cixin Liu</li>
+            <li>Hard-Boiled Wonderland and the End of the World, Haruki Murakami</li>
+            <li>Neuromancer, William Gibson</li>
+            <li>Contact, Carl Sagan</li>
+            <li>Ball Lightning, Cixin Liu (I love hard-scifi)</li>
+          </ol> 
+        <!---Show a Unordered List-->
+       
+        <h1>Fun Halloween Movies</h1>
+        <ul>
+            <li>Dont Be Afraid of the Dark</li>
+            <li>The Cabin in the Woods</li>
+            <li>Shaun of the Dead</li>
+            <li>Mandy</li>
+            <li>Poltergeist (1982) </li>
+            <li>Malignant</li>
+            <li>Monster House</li>
+            <li>Donnie Darko</li>
+            <li>What We Do In The Shadows</li>
+            <li>House of 1000 Corpses</li>
+          </ul>  
+        <!---Show a Table List-->
+       
+        <h1>Licence plate vanity requests flaged for review</h1>
+        <table>
+            <tr>
+              <th>plate</th>
+              <th>Customer intention</th>
+              <th>Reviewer Comments</th>
+              <th>Status(Y or N)</th>
+            </tr>
+            <tr>
+              <td>BATBOX1,</td>
+              <td>BATMOBILE (BATMAT) PLUS SHAPE OF VEHICLE (SCION XB),</td>
+              <td>BOX,</td>
+              <td>N.</td>
+            </tr>
+            <tr>
+                <td>FKK OFF,</td>
+                <td>FREIKORPER-KULTUR (GERMAN),</td>
+                <td>F*** OFF,</td>
+                <td>N.</td>
+            </tr>
+            <tr>
+                <td>D JERK,</td>
+                <td>MY WIFE CALLS ME THAT ITS MY NICK NAME,</td>
+                <td>LOOKS LIKE DA JERK</td>
+                <td>N.</td>
+            </tr>
+            <tr>
+                <td>SIX6XI</td>
+                <td>NO CUSTOMER INTENTION AVAILIBLE</td>
+                <td>666 MARK OF THE BEAST THE DEVIL IS EVIL, </td>
+                <td>Y.</td>
+            </tr>
+          </table>
+          <p>LINK TO <a href="https://github.com/veltman/ca-license-plates/blob/master/applications.csv"target="_blank"> DATASET</a></p>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         
+         
+         
+    
+          
+          
+
+          <div class="bottm-spacer"></div>
+        </div>
+
+        <div class="bottom-border"></div>
+        </div>
+
+        
+         
+    </body>
+</div>
+</html>
